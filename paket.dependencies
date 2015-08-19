@@ -1,0 +1,12 @@
+source https://nuget.org/api/v2
+
+// Build-related
+nuget FAKE
+
+// Test-related
+nuget NUnit 
+nuget NUnit.Runners
+
+// WebApi
+nuget Microsoft.Owin.SelfHost
+nuget Microsoft.AspNet.WebApi.Owin

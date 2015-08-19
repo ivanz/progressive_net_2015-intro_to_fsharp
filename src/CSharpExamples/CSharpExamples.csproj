@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{20C45D4B-7C0A-4C7A-AC42-A9E6D70D7BF2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CSharpExamples</RootNamespace>
+    <AssemblyName>CSharpExamples</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\tests\CSharpExamples\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\bin\CSharpExamples\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="A_Part1\02-Values.cs" />
+    <Compile Include="A_Part1\03b-Exercise-TwelveDividedBy_Answer.cs" />
+    <Compile Include="A_Part1\03c-Exercise-StrToDayOfWeek.cs" />
+    <Compile Include="A_Part1\03f-Exercise-ConvertStrToInt_Answer.cs" />
+    <Compile Include="A_Part1\03e-Exercise-ConvertStrToInt.cs" />
+    <Compile Include="A_Part1\03d-Exercise-StrToDayOfWeek_Answer.cs.cs" />
+    <Compile Include="A_Part1\03a-Exercise-TwelveDividedBy.cs" />
+    <Compile Include="A_Part1\11a-Exercise-Decorator.cs" />
+    <Compile Include="A_Part1\12a-Exercise-Stategy.cs" />
+    <Compile Include="A_Part1\13a-Exercise-DependencyInjection.cs" />
+    <Compile Include="A_Part1\13b-Exercise-DependencyInjection_Answer - Copy.cs" />
+    <Compile Include="A_Part1\14a-Exercise-RomanNumber.cs" />
+    <Compile Include="A_Part1\14b-Exercise-RomanNumber_Answer.cs" />
+    <Compile Include="A_Part1\12b-Exercise-Stategy_Answer.cs" />
+    <Compile Include="A_Part1\11b-Exercise-Decorator_Answer.cs" />
+    <Compile Include="A_Part1\10-HigherOrderFunctions.cs" />
+    <Compile Include="A_Part1\09-MultipleArguments.cs" />
+    <Compile Include="A_Part1\07a-Exercise-FizzBuzz.cs" />
+    <Compile Include="A_Part1\08a-Exercise-StackCalculator.cs" />
+    <Compile Include="A_Part1\08b-Exercise-StackCalculator_Answer.cs" />
+    <Compile Include="A_Part1\06a-Exercise-ThinkOfANumber.cs" />
+    <Compile Include="A_Part1\06b-Exercise-ThinkOfANumber_Answer.cs" />
+    <Compile Include="A_Part1\07b-Exercise-FizzBuzz_Answer.cs" />
+    <Compile Include="A_Part1\05-Composition.cs" />
+    <Compile Include="A_Part1\04-Piping.cs" />
+    <Compile Include="A_Part1\01-HelloWorld.cs" />
+    <Compile Include="B_Part2\03a-Exercise-OrderQty.cs" />
+    <Compile Include="B_Part2\03b-Exercise-OrderQty_Answer.cs" />
+    <Compile Include="B_Part2\02-ContrainedType.cs" />
+    <Compile Include="B_Part2\04a-Exercise-CardGame.cs" />
+    <Compile Include="B_Part2\01-OptionTest.cs" />
+    <Compile Include="B_Part2\05a-Exercise-Contact.cs" />
+    <Compile Include="B_Part2\05b-Exercise-Contact_Answer.cs" />
+    <Compile Include="B_Part2\04b-Exercise-CardGame_Answer.cs" />
+    <Compile Include="C_Part3\01-TotalFunctions.cs" />
+    <Compile Include="C_Part3\03-Validation.cs" />
+    <Compile Include="C_Part3\02a-Exercise-TotalFunctions.cs" />
+    <Compile Include="C_Part3\02a-Exercise-TotalFunctions_Answer.cs" />
+    <Compile Include="C_Part3\07-RopExample.cs" />
+    <Compile Include="C_Part3\06b-Exercise-ErrorHandling_Answer.cs" />
+    <Compile Include="C_Part3\06a-Exercise-ErrorHandling.cs" />
+    <Compile Include="C_Part3\04b-Exercise-Validation_Answer.cs" />
+    <Compile Include="C_Part3\04a-Exercise-Validation.cs" />
+    <Compile Include="C_Part3\05-ErrorHandling.cs" />
+    <Compile Include="DesignPatterns\DecoratorPattern.cs" />
+    <Compile Include="DesignPatterns\StrategyPatternFunc.cs" />
+    <Compile Include="DesignPatterns\StrategyPatternClassic.cs" />
+    <Compile Include="HigherOrderFunctions\FoldExamples.cs" />
+    <Compile Include="HigherOrderFunctions\LoopExamples.cs" />
+    <Compile Include="IsCSharpPredictable\CustomerRepository.cs" />
+    <Compile Include="IsCSharpPredictable\QaEquality.cs" />
+    <Compile Include="IsCSharpPredictable\Customer.cs" />
+    <Compile Include="IsCSharpPredictable\Order.cs" />
+    <Compile Include="IsCSharpPredictable\PersonalName.cs" />
+    <Compile Include="B_Part2_PaymentMethod\CardNumber.cs" />
+    <Compile Include="B_Part2_PaymentMethod\CardType.cs" />
+    <Compile Include="B_Part2_PaymentMethod\Examples.cs" />
+    <Compile Include="B_Part2_PaymentMethod\ChequePaymentMethod.cs" />
+    <Compile Include="B_Part2_PaymentMethod\CardPaymentMethod.cs" />
+    <Compile Include="B_Part2_PaymentMethod\IPaymentMethod.cs" />
+    <Compile Include="B_Part2_PaymentMethod\CashPaymentMethod.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilities\Rop.cs" />
+    <Compile Include="Utilities\Unit.cs" />
+    <Compile Include="Utilities\Either.cs" />
+    <Compile Include="Utilities\Extensions.cs" />
+    <Compile Include="Utilities\Fun.cs" />
+    <Compile Include="Utilities\Option.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="paket.references" />
+    <None Include="B_Part2_PaymentMethod\_readme.md" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <Reference Include="nunit.framework">
+      <HintPath>..\..\packages\NUnit\lib\nunit.framework.dll</HintPath>
+      <Private>True</Private>
+      <Paket>True</Paket>
+    </Reference>
+  </ItemGroup>
+</Project>
